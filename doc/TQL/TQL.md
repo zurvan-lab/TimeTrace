@@ -9,7 +9,7 @@ Time trace is using a query language called TQL. Here is documentation and speci
 
 | Command   |      Action      |  Arguments |
 |----------|:-------------|:------|
-| CON |  to make a connection and access to database | username - password |
+| CON * |  to make a connection and access to database | username - password |
 | SET * |    make a new set   | set-name |
 | SSET * | make a new subset | set-name - subset-name |
 | PUSH * | push an element to a subset | set-name - subset-name - value-of-element - time(unix-timestamp) |
@@ -34,4 +34,4 @@ Time trace is using a query language called TQL. Here is documentation and speci
 | SNF | set is not found |
 | SSNF | subset is not found |
 | ENF | element(s) is not found |
-| [DATA separated by space] (key-time key-time key-time) | GET successful response |
+| DATA in format of [protocol](../protocol/) |
